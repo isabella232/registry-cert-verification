@@ -1,6 +1,6 @@
 var test = require('tape')
 var exec = require('child_process').exec
-var TIMEOUT = 5000 // 5 seconds
+var TIMEOUT = 15000 // 5 seconds
 var async = require('async')
 
 test('npm 1.1.58 should fail', function (t) {
@@ -25,7 +25,7 @@ test('all popular versions of npm post 1.1.62 should work',function(t) {
     passing,
     function(version,cb) {
       exec(
-        "npm cache clear; node ./npms/npm-"+version+"/cli.js view express name -ddd --fetch-retries=1 --fetch-retry-mintimeout=1",
+        "npm cache clear; node ./npms/npm-"+version+"/cli.js view express name -ddd --fetch-retries=1 --fetch-retry-mintimeout=15",
         {
           timeout: TIMEOUT
         },

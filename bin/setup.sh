@@ -5,7 +5,8 @@ declare -a arr=(\
   "http://nodejs.org/dist/npm/npm-1.1.62.tgz"\
   "http://nodejs.org/dist/npm/npm-1.3.24.tgz"\
   "http://nodejs.org/dist/npm/npm-1.4.6.tgz"\
-  "http://registry.npmjs.org/npm/-/npm-1.4.14.tgz")
+  "http://registry.npmjs.org/npm/-/npm-1.4.14.tgz"\
+  "http://registry.npmjs.org/npm/-/npm-2.1.18.tgz")
 
 mkdir -p ./npms
 cd ./npms

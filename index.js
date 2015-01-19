@@ -19,7 +19,7 @@ test('npm 1.1.58 should fail', function (t) {
 })
 
 // passing versions
-var passing = ["1.1.62","1.3.24","1.4.6","1.4.14"]
+var passing = ["1.1.62","1.3.24","1.4.6","1.4.14","2.1.18"]
 test('all popular versions of npm post 1.1.62 should work',function(t) {
   async.each(
     passing,
